@@ -60,7 +60,7 @@ else:
         print("           I P  c ủ a  b ạ n  l à : ", ip)
         print("\033[1;35m-------------------------------------------------------------")
         print('Link Để Vượt Key Là: '+link_key)     
-        keynhap = input('Key Là: ')
+        #keynhap = input('Key Là: ')
         if keynhap == key:
             print('Key Đúng Mời Bạn Dùng Tool !!!')
         else:
