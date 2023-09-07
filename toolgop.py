@@ -6,15 +6,7 @@ import platform
 import hashlib
 from datetime import datetime
 
-machine_code = platform.machine()
-def generate_key():
-    current_date = date.today().strftime("%d%H")
-    ip_address = socket.gethostbyname(socket.gethostname())
-    key = current_date+ machine_code + hashlib.sha256(ip_address.encode()).hexdigest() + secrets.token_hex(5)
-    return key[:20]
 
-random = generate_key()
-key = "HQATOOL"+random
 def get_ip_address():
     # Tạo một socket
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
