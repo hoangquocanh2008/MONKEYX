@@ -82,7 +82,7 @@ def tool_3():
         print("TOOL ĐANG UPDATE LIÊN HỆ 0901386277 ĐỂ ĐƯỢC HỖ TRỢ")
 
 def main():
-    print("1: SPAM GMAIL\n2: SPAM SMS & CALL\n3:Tool đào PROXY")
+    print("1: SPAM GMAIL\n2: SPAM SMS & CALL\n3: TOOL ĐÀO PROXY")
     choice = input("Chọn tool: ")
     if choice == "1":
         tool_1()
